@@ -152,7 +152,7 @@ const games = [
   {
     "id": "neon",
     "title": "Bajo Neón",
-    "genre": "Acción · Cyberpunk barrial",
+    "genre": "Cyberpunk",
     "description": "Acá debería ir un texto que describa Bajo Neón.",
     "cover": "assets/neon-01-barrio.webp",
     "shots": [
@@ -201,7 +201,7 @@ const games = [
   {
     "id": "machete",
     "title": "Machete Cósmico",
-    "genre": "Acción · Ciencia ficción",
+    "genre": "Hack and slash",
     "description": "Acá debería ir un texto que describa Machete Cósmico.",
     "cover": "assets/machete-02_La_Chacra_y_Moro.webp",
     "shots": [
