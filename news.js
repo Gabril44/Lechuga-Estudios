@@ -1,0 +1,3 @@
+const $=s=>document.querySelector(s);
+$('#year').textContent=new Date().getFullYear();
+games.slice(0,3).forEach(g=>{const card=document.createElement('article');card.className='news-card';card.innerHTML=`<img src="${g.cover}" alt="Captura de ${g.title}" loading="lazy"><div><span class="genre">${g.title}</span><h3>Acá debería ir el título de una novedad.</h3><p>Acá debería ir un texto que cuente una actualización de ${g.title}.</p><details><summary>Ver espacio de la novedad</summary><p>Acá debería ir un texto que desarrolle la novedad y cuente qué cambió en el juego.</p><p>Acá debería ir la fecha de esta novedad.</p></details></div>`;$('#news-grid').append(card)});

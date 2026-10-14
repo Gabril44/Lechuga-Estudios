@@ -1,0 +1,66 @@
+/* Game posters: individual worlds pinned to the studio wall. */
+.game-grid{gap:56px 38px;padding:20px 12px 26px}
+.game-card.poster{--accent:#d4f77a;--paper:#102f20;--angle:-1.3deg;position:relative;isolation:isolate;border:2px solid var(--accent);background:var(--paper);padding:12px 12px 0;transform:rotate(var(--angle));box-shadow:9px 11px 0 #041b14;transition:transform .2s,box-shadow .2s;border-radius:3px 8px 2px 4px}
+.game-card.poster:nth-child(even){--angle:1.2deg}
+.game-card.poster:before{content:'';position:absolute;z-index:4;top:-15px;left:calc(50% - 43px);width:86px;height:30px;background:#deefafb3;transform:rotate(-7deg);clip-path:polygon(0 9%,96% 0,100% 96%,3% 100%)}
+.game-card.poster:after{content:'';position:absolute;bottom:-1px;right:-1px;width:24px;height:24px;background:linear-gradient(135deg,#051e16 50%,var(--accent) 51%);box-shadow:-3px -3px 0 #061b1422;pointer-events:none}
+.game-card.poster .game-cover{border-radius:2px;overflow:hidden;outline:1px solid #ffffff20}
+.game-card.poster .game-info{padding:23px 15px 22px;position:relative;z-index:2}
+.game-card.poster .game-info h3{max-width:calc(100% - 95px);font-weight:700;line-height:1.14;color:var(--accent)}
+.game-card.poster .game-info p{max-width:calc(100% - 75px);min-height:47px}
+.poster-art{position:absolute;z-index:3;right:7px;bottom:60px;width:135px;max-height:170px;object-fit:contain;transform:rotate(10deg);pointer-events:none;filter:drop-shadow(4px 6px 0 #02160f70)}
+.blood-drips{position:absolute;top:10px;left:12px;width:calc(100% - 24px);z-index:3;pointer-events:none}
+.game-card.poster .image-label{top:22px;left:14px;background:var(--accent);max-width:80%;font-size:9px;z-index:4}
+.game-card.poster .image-arrow{border-color:var(--accent);color:var(--accent);background:#051e16dd}
+.game-card.poster .genre{color:var(--accent)}
+.game-card.poster .open-game{display:flex;align-items:center;gap:12px;min-height:44px;border-bottom:0}
+.scribble-arrow{width:54px;height:30px;object-fit:contain;transition:transform .2s;pointer-events:none}
+.hero .button .scribble-arrow{filter:brightness(.22);width:44px}
+.game-card.poster:hover,.game-card.poster:focus-within{transform:rotate(0deg) translateY(-3px);box-shadow:7px 15px 0 #041b14}
+.open-game:hover .scribble-arrow,.hero .button:hover .scribble-arrow{transform:translateX(5px) rotate(-7deg)}
+.game-card[data-game="campanas"]{--accent:#d07785;--paper:#291e28;border-color:#763747}
+.game-card[data-game="campanas"] .game-info{background:linear-gradient(#271d2600,#3b202b99)}
+.game-card[data-game="campanas"] .poster-art{width:115px;bottom:70px;transform:rotate(-8deg)}
+.game-card[data-game="neon"]{--accent:#62f6dd;--paper:#112a30;border-color:#53d5d0;box-shadow:7px 9px 0 #061c22,0 0 18px #62f6dd18}
+.game-card[data-game="neon"] .game-cover:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(transparent 0 4px,#0c10232e 4px 5px);pointer-events:none}
+.game-card[data-game="neon"] .game-info h3{text-shadow:2px 1px #c955b8}
+.game-card[data-game="neon"] .poster-art{width:145px;bottom:70px;filter:drop-shadow(0 0 8px #5bffd340)}
+.game-card[data-game="machete"]{--accent:#b3f777;--paper:#263025;border-color:#7bab62}
+.game-card[data-game="machete"] .poster-art{width:160px;bottom:65px;transform:rotate(-8deg)}
+.game-card[data-game="sapo"]{--accent:#c9da8b;--paper:#1c342d;border-color:#70ad8b}
+.game-card[data-game="sapo"] .poster-art{width:145px;bottom:65px}
+.game-card[data-game="profundidades"]{--accent:#a2d1c7;--paper:#172b30;border-color:#638d91}
+.game-card[data-game="profundidades"] .poster-art{width:90px;bottom:60px;transform:rotate(8deg);filter:drop-shadow(0 0 12px #a7e5b126)}
+.section-heading h2:after{content:'';display:block;width:clamp(80px,18vw,220px);height:8px;margin-top:14px;background:var(--lime);transform:rotate(-2deg);clip-path:polygon(0 28%,15% 0,72% 14%,100% 2%,95% 67%,47% 89%,3% 100%);opacity:.7}
+.lettuce-leaf{transition:transform .3s}
+.leaf-scene:hover .leaf-games-one{transform:rotate(47deg)}
+.leaf-scene:hover .leaf-team-one{transform:rotate(-32deg)}
+.mascot-play .mascot{transition:transform .3s,filter .3s}
+.mascot-play:hover .mascot{transform:rotate(3deg) translateY(-5px);filter:contrast(1.08)}
+.mascot-play:hover .sticker{transform:rotate(-6deg)}
+.sticker{transition:transform .3s}
+.team-avatar:hover .doodle-brow{transform:rotate(8deg)}
+.team-avatar:hover .doodle-brow.second{transform:rotate(-35deg)}
+.team-avatar:hover .avatar-doodle:after{height:7%;top:57%;border-radius:0;border-width:0 0 5px;background:none;transform:rotate(-10deg)}
+.doodle-brow{transition:transform .2s}
+.noticeboard{background:radial-gradient(#72956433 1px,transparent 1px) 0 0/14px 14px,#163c29;min-height:calc(100svh - 96px)}
+.noticeboard .news-grid{padding:22px 10px;gap:42px}
+.noticeboard .news-card{position:relative;transform:rotate(-1.5deg);background:#e8e9cd;color:#173526;border:0;box-shadow:8px 10px 0 #051b1580;transition:transform .2s}
+.noticeboard .news-card:nth-child(2){transform:rotate(1.7deg)}
+.noticeboard .news-card:nth-child(3){transform:rotate(-.8deg)}
+.noticeboard .news-card:before{content:'';position:absolute;z-index:2;top:-13px;left:calc(50% - 30px);width:60px;height:27px;background:#b8d983c9;transform:rotate(-12deg)}
+.noticeboard .news-card:after{content:'';position:absolute;bottom:0;right:0;width:20px;height:20px;background:linear-gradient(135deg,#b6b78b 50%,#163c29 51%)}
+.noticeboard .news-card:hover{transform:rotate(0deg)}
+.noticeboard .news-card h3{font-weight:700}
+.noticeboard .news-card .genre,.noticeboard .news-card p,.noticeboard summary{color:#264c37}
+.noticeboard details{border-color:#66856388}
+.game-hero{position:relative;isolation:isolate}
+.detail-theme-art{position:absolute;z-index:2;right:clamp(20px,7vw,100px);top:160px;width:clamp(90px,13vw,200px);height:180px;object-fit:contain;transform:rotate(12deg);pointer-events:none;filter:drop-shadow(5px 7px 0 #031a1566)}
+body[data-game="campanas"] .game-hero{background:linear-gradient(110deg,#164a2e,#382332)}
+body[data-game="neon"] .game-hero{background:linear-gradient(110deg,#164a2e,#163443)}
+body[data-game="neon"] #game-title{text-shadow:2px 2px #ba59aa}
+body[data-game="profundidades"] .game-hero{background:linear-gradient(110deg,#164a2e,#172c36)}
+@media(max-width:1100px){.poster-art{width:115px}.game-card.poster .game-info h3{font-size:25px}.game-card[data-game="machete"] .poster-art{width:135px}.game-card[data-game="neon"] .poster-art{width:125px}.game-card[data-game="sapo"] .poster-art{width:125px}.game-card.poster .game-info{padding-inline:8px}}
+@media(max-width:800px){.game-grid{gap:45px 24px;padding-inline:8px}.poster-art{width:95px;right:2px}.game-card.poster .game-info h3{max-width:calc(100% - 60px);font-size:23px}.game-card.poster .game-info p{max-width:calc(100% - 50px);font-size:12px}.game-card[data-game="machete"] .poster-art{width:110px}.game-card[data-game="sapo"] .poster-art,.game-card[data-game="neon"] .poster-art{width:105px}.game-card[data-game="campanas"] .poster-art{width:80px}.game-card[data-game="profundidades"] .poster-art{width:65px}.detail-theme-art{position:static;display:block;height:105px;width:120px;margin:20px 0 0 auto}.noticeboard .news-grid{gap:36px}}
+@media(max-width:600px){.game-grid{gap:40px;padding:18px 10px 25px}.game-card.poster{--angle:-1deg}.game-card.poster:nth-child(even){--angle:1deg}.game-card.poster .game-info{padding:20px 10px 22px}.game-card.poster .game-info h3{font-size:26px;max-width:calc(100% - 85px)}.game-card.poster .game-info p{max-width:calc(100% - 65px)}.game-card.poster .image-label{font-size:8px}.poster-art{bottom:64px}.noticeboard .news-grid{padding-inline:8px}.section-heading h2:after{height:6px}}
+@media(prefers-reduced-motion:reduce){.game-card.poster,.scribble-arrow,.mascot-play .mascot,.lettuce-leaf,.sticker,.noticeboard .news-card,.doodle-brow{transition:none}.game-card.poster:hover{transform:rotate(var(--angle))}.mascot-play:hover .mascot{transform:rotate(9deg)}.open-game:hover .scribble-arrow,.hero .button:hover .scribble-arrow{transform:none}}

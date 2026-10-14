@@ -1,0 +1,44 @@
+/* A scrappy lettuce identity: torn paper, marker faces and leafy margins. */
+.leaf-scene{position:relative;isolation:isolate;overflow:hidden;overflow:clip}
+.leaf-scene>*:not(.lettuce-leaf){position:relative;z-index:1}
+.lettuce-leaf{position:absolute;z-index:0;width:clamp(50px,7vw,120px);height:auto;pointer-events:none;user-select:none;filter:drop-shadow(5px 7px 0 #041b1640)}
+.leaf-hero-one{left:46%;top:7%;width:65px;transform:rotate(-38deg)}
+.leaf-hero-two{right:2%;bottom:12%;transform:rotate(42deg);opacity:.75}
+.leaf-games-one{right:3%;top:40px;transform:rotate(35deg);width:80px}
+.leaf-games-two{left:-22px;bottom:20px;transform:rotate(-35deg);width:110px}
+.leaf-team-one{left:2%;top:26px;transform:rotate(-42deg);width:105px}
+.leaf-team-two{right:-25px;bottom:20px;transform:rotate(30deg);width:150px}
+.leaf-footer{left:45%;bottom:-28px;transform:rotate(-25deg);width:75px;opacity:.55}
+.team-section{background:#164a2e;padding-top:85px;padding-bottom:95px;border-top:3px solid #071e15;border-bottom:3px solid #071e15}
+.team-section .section-heading{padding-left:70px}
+.team-section .eyebrow{display:inline-block;padding:8px 13px;background:var(--lime);color:var(--dark);transform:rotate(-3deg);box-shadow:4px 4px 0 #071e15;letter-spacing:2px}
+.team-grid{gap:30px;padding:22px 10px 10px}
+.team-member{--tilt:-2deg;position:relative;padding:30px 18px 25px;background:#0e2e20;border:2px solid #92bc62;box-shadow:7px 9px 0 #071e15;transform:rotate(var(--tilt));border-radius:4px 13px 5px 18px}
+.team-member:nth-child(2){--tilt:2deg;top:15px}
+.team-member:nth-child(3){--tilt:-1deg;top:-5px}
+.team-member:nth-child(4){--tilt:2.5deg;top:12px}
+.team-member:before{content:'';position:absolute;top:-12px;left:calc(50% - 32px);width:65px;height:24px;background:#d4f77abd;transform:rotate(-9deg);clip-path:polygon(3% 0,96% 7%,100% 93%,0 100%);z-index:2}
+.team-number{position:absolute;right:12px;top:12px;font:700 16px 'Space Grotesk',sans-serif;color:var(--lime);transform:rotate(10deg)}
+.team-avatar{position:relative;width:160px;max-width:100%;height:auto;aspect-ratio:1;margin:0 auto 16px;border:4px solid #082719;border-radius:44% 56% 39% 61% / 58% 41% 59% 42%;background:repeating-linear-gradient(110deg,#acd756 0 14px,#b7e268 14px 28px);box-shadow:4px 5px 0 var(--lime);transform:rotate(-6deg);overflow:hidden}
+.team-member:nth-child(even) .team-avatar{transform:rotate(7deg);border-radius:60% 40% 52% 48% / 44% 61% 39% 56%}
+.avatar-doodle{position:absolute;inset:0}
+.avatar-doodle:before,.avatar-doodle:after{content:'';position:absolute;top:45%;width:25%;height:27%;border:5px solid #143c26;border-radius:45% 55% 50% 40%;background:radial-gradient(ellipse at 50% 58%,#143c26 0 18%,transparent 21%);transform:rotate(-12deg)}
+.avatar-doodle:before{left:17%}.avatar-doodle:after{right:16%;transform:rotate(13deg)}
+.doodle-brow{position:absolute;top:32%;width:32%;height:9%;background:#143c26;border-radius:6px;transform:rotate(23deg);left:12%}
+.doodle-brow.second{left:auto;right:10%;transform:rotate(-23deg)}
+.doodle-mouth{position:absolute;left:34%;bottom:9%;width:35%;height:13%;border-bottom:5px solid #143c26;border-radius:50%;transform:rotate(-12deg)}
+.team-member:nth-child(2) .doodle-mouth{transform:rotate(13deg)}
+.team-member:nth-child(3) .doodle-brow{transform:rotate(-12deg)}
+.team-member:nth-child(3) .doodle-brow.second{transform:rotate(9deg)}
+.team-photo-note{font-size:9px;max-width:180px;margin-bottom:18px}
+.team-member h3{display:inline-block;padding:7px 10px;background:var(--cream);color:#143c26;font-weight:700;font-size:clamp(18px,1.6vw,25px);letter-spacing:-1px;transform:rotate(-2deg);box-shadow:3px 3px 0 #071e15;max-width:100%}
+.team-role{font-weight:700;letter-spacing:.5px;min-height:44px;margin:16px 0 10px}
+.team-bio{font-size:12px}
+.team-member:hover{border-color:var(--lime)}
+.game-cover{border-radius:3px 12px 4px 7px}
+.image-label{transform:rotate(-3deg);background:var(--lime);color:var(--dark);box-shadow:3px 3px 0 #071e15;font-weight:700}
+.ticker{border-top:2px solid #092a1b;border-bottom:2px solid #092a1b}
+.hero .button{box-shadow:5px 5px 0 #092a1b;transform:rotate(-1deg)}
+@media(max-width:1100px){.team-grid{gap:40px 30px}.team-member:nth-child(n){top:0}.team-member h3{font-size:24px}.leaf-hero-one{left:43%;width:45px}.leaf-hero-two{width:75px}}
+@media(max-width:800px){.leaf-hero-one{left:auto;right:18px;top:20px;width:35px;opacity:.7}.leaf-hero-two{width:55px;right:2%;bottom:4%}.leaf-games-one{width:50px;top:10px;right:10px}.team-section{padding-top:65px;padding-bottom:65px}.team-section .section-heading{padding-left:0}.leaf-team-one{left:auto;right:15px;top:15px;width:55px;opacity:.5}.leaf-team-two{width:90px}.team-grid{gap:32px 22px;padding-inline:6px}.team-member{padding:25px 12px 22px}.team-avatar{width:140px}.team-member h3{font-size:21px}.team-bio{font-size:11px}.team-number{font-size:13px}}
+@media(max-width:600px){.team-grid{grid-template-columns:1fr;gap:32px;max-width:420px;margin:auto;padding-inline:12px}.team-member{padding:28px 22px}.team-member:nth-child(n){--tilt:-1.5deg}.team-member:nth-child(even){--tilt:1.5deg}.team-avatar{width:170px}.team-member h3{font-size:25px}.team-role{min-height:0}.team-photo-note{max-width:220px}.team-bio{font-size:12px;max-width:280px}.leaf-games-two{width:70px}.leaf-footer{left:70%;width:55px}.leaf-team-two{width:85px}}

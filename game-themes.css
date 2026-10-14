@@ -1,0 +1,48 @@
+/* Decorative details are confined to the margins, never the game screenshots. */
+body[data-game]{--game-accent:#d4f77a;--game-panel:#173c28;--game-line:#779f63}
+body[data-game="campanas"]{--game-accent:#ed9aa6;--game-panel:#291f2a;--game-line:#934052}
+body[data-game="neon"]{--game-accent:#6cebd8;--game-panel:#122e34;--game-line:#4ba6aa}
+body[data-game="machete"]{--game-accent:#b5ef77;--game-panel:#233224;--game-line:#749f53}
+body[data-game="sapo"]{--game-accent:#d0df92;--game-panel:#1b3830;--game-line:#77aa89}
+body[data-game="profundidades"]{--game-accent:#b1d8d1;--game-panel:#182d33;--game-line:#658e94}
+.themed-section{position:relative;isolation:isolate;overflow:hidden;overflow:clip;padding-top:85px;padding-bottom:85px}
+.themed-section>*:not(.game-leaf):not(.game-margin-mark):not(.detail-theme-art){position:relative;z-index:1}
+.game-leaf{position:absolute;z-index:0;width:80px;height:115px;object-fit:contain;pointer-events:none;filter:drop-shadow(4px 5px 0 #031a1566);opacity:.85}
+.game-leaf-right{right:12px;top:15px;transform:rotate(32deg)}
+.game-leaf-left{left:4px;bottom:20px;transform:rotate(-35deg)}
+.game-margin-mark{position:absolute;right:-12px;bottom:8px;width:100px;height:110px;object-fit:contain;opacity:.45;transform:rotate(-13deg);pointer-events:none;z-index:0}
+.game-hero .game-leaf{top:20px;width:55px;height:75px;right:30%}
+.game-cover-frame{margin-top:45px;border:2px solid var(--game-line);padding:10px;background:var(--game-panel);box-shadow:7px 9px 0 #051c16;transform:rotate(-.4deg)}
+.game-cover-frame .detail-cover{margin-top:0;max-height:650px}
+.game-cover-frame:before{content:'';position:absolute;top:-12px;left:45%;width:75px;height:25px;background:#dceda99e;transform:rotate(-7deg);z-index:4}
+.cover-blood{position:absolute;top:10px;left:10px;width:calc(100% - 20px);height:auto;pointer-events:none;z-index:2}
+body[data-game] .game-about{background:linear-gradient(130deg,#0c2418,var(--game-panel))}
+body[data-game] .gallery-section,body[data-game] .demo-section{background:var(--game-panel)}
+body[data-game] .eyebrow,body[data-game] .genre,body[data-game] .viewer-top p{color:var(--game-accent)}
+body[data-game] .section-heading h2:after{background:var(--game-accent)}
+body[data-game] .status-panel,body[data-game] .demo-panel{border:2px solid var(--game-line);background:#071f1c55;box-shadow:5px 6px 0 #071c1555;transform:rotate(1deg)}
+body[data-game] .status-panel:before{content:'';position:absolute;left:20px;top:-12px;width:58px;height:25px;background:#e0edb39e;transform:rotate(-8deg)}
+body[data-game] .shots{gap:30px 24px;padding:12px 6px}
+body[data-game] .shot{padding:8px 8px 10px;background:#061f1c88;border:1px solid var(--game-line);box-shadow:4px 5px 0 #05191055;transform:rotate(-.5deg);transition:transform .2s}
+body[data-game] .shot:nth-child(even){transform:rotate(.5deg)}
+body[data-game] .shot:hover,body[data-game] .shot:focus-visible{transform:rotate(0deg) translateY(-2px)}
+body[data-game] .shot span{padding:12px 4px 5px}
+body[data-game] .shot small{display:block;padding-inline:4px}
+body[data-game] .video-placeholder{border:2px solid var(--game-line);box-shadow:6px 8px 0 #051b16;position:relative}
+body[data-game] .play-mark{color:var(--game-accent);border-color:var(--game-line)}
+body[data-game] .sketch-placeholder{border-color:var(--game-line)}
+body[data-game] .sketch-placeholder>span{color:var(--game-accent)}
+body[data-game] .process-card{border-color:var(--game-line);background:var(--game-panel)}
+body[data-game] dialog{border-color:var(--game-line)}
+body[data-game="campanas"] .gallery-section{background:radial-gradient(ellipse at 100% 0,#712b3d33,transparent 55%),var(--game-panel)}
+body[data-game="campanas"] .demo-panel{border-top:4px solid #934052}
+body[data-game="neon"] .game-about{background:repeating-linear-gradient(0deg,transparent 0 5px,#64e7d004 5px 6px),linear-gradient(130deg,#0c2418,#122e34)}
+body[data-game="neon"] .status-panel,body[data-game="neon"] .demo-panel{box-shadow:4px 5px 0 #cf67b233,inset 0 0 14px #63eed80a}
+body[data-game="neon"] .shot{border-left:3px solid #6cebd8;border-right:3px solid #b25ca6}
+body[data-game="machete"] .gallery-section{background:radial-gradient(circle at 95% 12%,#93c94d1a 0 18px,transparent 19px),radial-gradient(circle at 92% 8%,#93c94d12 0 8px,transparent 9px),var(--game-panel)}
+body[data-game="sapo"] .demo-section{background:repeating-radial-gradient(ellipse at 100% 110%,transparent 0 60px,#78b8960a 62px 64px,transparent 66px 110px),var(--game-panel)}
+body[data-game="profundidades"] .gallery-section{background:radial-gradient(ellipse at 0 0,#9ed8cc0d,transparent 50%),var(--game-panel)}
+body[data-game="profundidades"] .status-panel{border-style:dashed}
+@media(max-width:800px){.themed-section{padding-top:65px;padding-bottom:65px}.game-leaf{width:50px;height:70px}.game-leaf-left{left:-8px;bottom:6px}.game-leaf-right{right:4px;top:5px}.game-margin-mark{width:65px;height:75px;opacity:.3}.game-hero .game-leaf{right:12px;top:20px;width:40px;height:60px}.game-cover-frame{margin-top:25px;padding:6px;box-shadow:4px 5px 0 #051c16}.cover-blood{top:6px;left:6px;width:calc(100% - 12px)}body[data-game] .shots{gap:24px 16px}}
+@media(max-width:480px){.themed-section{padding-top:55px;padding-bottom:55px}body[data-game] .shots{grid-template-columns:1fr;padding-inline:4px;gap:24px}.game-cover-frame{transform:none}.game-leaf{opacity:.65}.game-margin-mark{width:50px;height:60px}body[data-game] .status-panel,body[data-game] .demo-panel{transform:rotate(.5deg)}}
+@media(prefers-reduced-motion:reduce){body[data-game] .shot{transition:none}body[data-game] .shot:hover{transform:none}}
