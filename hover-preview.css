@@ -1,0 +1,5 @@
+.game-card .game-cover .hover-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;z-index:1;transition:opacity .12s;transform:none}
+.game-card.preview-playing .game-cover .hover-preview{opacity:1}
+.game-card .game-cover .image-arrow{z-index:2}
+.game-card .game-cover .image-label,.game-card .game-cover .release-tape{z-index:3}
+@media(prefers-reduced-motion:reduce){.game-card .game-cover .hover-preview{display:none;transition:none}}

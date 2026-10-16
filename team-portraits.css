@@ -1,0 +1,20 @@
+.team-portrait.team-avatar{width:230px;max-width:100%;height:auto;aspect-ratio:260/280;background:none;border:0;box-shadow:none;border-radius:0;overflow:visible;transform:none;margin:-5px auto 8px}
+.team-member:nth-child(even) .team-portrait.team-avatar{transform:none;border-radius:0}
+.developer-drawing{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(3px 4px 0 #061c1555)}
+.team-portrait .portrait-face{transform-origin:50% 50%;transition:transform .25s}
+.team-portrait .artist-brush{transform-box:fill-box;transform-origin:50% 100%;transition:transform .25s}
+.team-portrait .music-notes,.team-portrait .portrait-secret,.team-portrait .paint-splashes{transition:transform .25s;transform-box:fill-box;transform-origin:center}
+.team-portrait .writer-scribble{stroke-dasharray:90;stroke-dashoffset:90;transition:stroke-dashoffset .4s}
+.team-portrait .key-tap{transition:transform .2s}
+.team-member:hover .portrait-programador .key-tap,.team-member:focus-within .portrait-programador .key-tap{transform:translateY(3px)}
+.team-member:hover .portrait-guionista .writer-scribble{stroke-dashoffset:0}
+.team-member:hover .portrait-musico .music-notes{transform:translateY(-5px) rotate(-6deg)}
+.team-member:hover .portrait-artista .artist-brush{transform:rotate(-12deg)}
+.team-member:hover .portrait-artista .paint-splashes{transform:scale(1.09)}
+.team-member:hover .portrait-secret{transform:rotate(5deg) translateY(-2px)}
+.team-member:hover .portrait-face{transform:rotate(-2deg)}
+.team-member:nth-child(2):hover .portrait-face{transform:rotate(2deg)}
+@media(max-width:1100px){.team-portrait.team-avatar{width:225px}}
+@media(max-width:800px){.team-portrait.team-avatar{width:210px}}
+@media(max-width:600px){.team-portrait.team-avatar{width:230px}}
+@media(prefers-reduced-motion:reduce){.team-portrait *{transition:none!important}.team-member:hover .portrait-face,.team-member:hover .portrait-secret,.team-member:hover .portrait-musico .music-notes,.team-member:hover .portrait-artista .artist-brush,.team-member:hover .portrait-artista .paint-splashes,.team-member:hover .portrait-programador .key-tap{transform:none}.team-portrait .writer-scribble{stroke-dashoffset:0}}

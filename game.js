@@ -1,8 +1,8 @@
 const $=s=>document.querySelector(s);let current=0,viewerShots=[];const id=new URLSearchParams(location.search).get('game');const game=games.find(g=>g.id===id);$('#year').textContent=new Date().getFullYear();
 if(!game){$('#game-main').innerHTML='<section class="section"><h1>Juego no encontrado</h1><a class="button" href="index.html#juegos">Volver a los juegos</a></section>'}else{
-document.body.dataset.game=game.id;const gameBadge=document.createElement('img');gameBadge.className='detail-theme-art';gameBadge.src='assets/'+{"campanas": "campanas-sello.svg", "neon": "neon-circuito.svg", "machete": "machete-alien.svg", "sapo": "sapo-estanque.svg", "profundidades": "profundidades-linterna.svg"}[game.id];gameBadge.alt='';gameBadge.setAttribute('aria-hidden','true');document.querySelector('.game-hero').append(gameBadge);
+document.body.dataset.game=game.id;const gameBadge=document.createElement('img');gameBadge.className='detail-theme-art';gameBadge.src='assets/'+{"campanas": "campanas-sello.svg", "neon": "neon-circuito.svg", "machete": "machete-alien.svg", "sapo": "sapo-estanque.svg", "profundidades": "profundidades-linterna.svg", "kiwi": "kiwi-jefe.svg", "bondi": "bondi-con-ruedas.svg"}[game.id];gameBadge.alt='';gameBadge.setAttribute('aria-hidden','true');document.querySelector('.game-hero').append(gameBadge);
 
-const themeMarks={campanas:'campanas-sello.svg',neon:'neon-circuito.svg',machete:'machete-alien.svg',sapo:'sapo-estanque.svg',profundidades:'profundidades-linterna.svg'};
+const themeMarks={campanas:'campanas-sello.svg',neon:'neon-circuito.svg',machete:'machete-alien.svg',sapo:'sapo-estanque.svg',profundidades:'profundidades-linterna.svg',kiwi:'kiwi-jefe.svg',bondi:'bondi-con-ruedas.svg'};
 document.querySelectorAll('#game-main > section').forEach((section,index)=>{
  section.classList.add('themed-section');
  const leaf=document.createElement('img');leaf.src='assets/hojita-'+game.id+'.svg';leaf.className='game-leaf game-leaf-'+(index%2?'left':'right');leaf.alt='';leaf.setAttribute('aria-hidden','true');section.append(leaf);
@@ -23,3 +23,12 @@ games.filter(g=>g.id!==game.id).forEach(g=>{const a=document.createElement('a');
 }
 function updateViewer(){const s=viewerShots[current];$('#large').src=s.src;$('#large').alt=game.title+': '+s.label;$('#viewer-title').textContent=s.label;$('#viewer-game').textContent=game.title+' / Lechuga Estudios';$('#position').textContent=(current+1)+' / '+viewerShots.length}
 function step(n){current=(current+n+viewerShots.length)%viewerShots.length;updateViewer()}$('#prev').onclick=()=>step(-1);$('#next').onclick=()=>step(1);$('#close').onclick=()=>$('#viewer').close();$('#viewer').addEventListener('close',()=>document.body.classList.remove('modal-open'));$('#viewer').addEventListener('click',e=>{if(e.target===$('#viewer')){const r=$('#viewer').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('#viewer').close()}});document.addEventListener('keydown',e=>{if($('#viewer').open){if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)}});
+
+if(game && game.status==='Terminado'){
+ document.querySelector('nav a[href="#demo"]').textContent='Jugar';
+ document.querySelector('#demo .eyebrow').textContent='05 / JUEGO COMPLETO';
+ document.querySelector('#demo h2').textContent='Acá debería ir un texto que invite a jugar Kiwi.';
+ document.querySelector('#demo > div > p:not(.eyebrow)').textContent='Acá debería ir un texto que explique cómo jugar, sus controles y sus requisitos.';
+ if(!game.demoUrl){document.querySelector('#demo-link button').textContent='Jugar · enlace pendiente';document.querySelector('#demo-link .pending').textContent='Acá debería ir el enlace para jugar o descargar Kiwi.'}
+ document.querySelector('.demo-panel > p').textContent='Acá debería ir un texto que indique la versión y la plataforma del juego.';
+}

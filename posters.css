@@ -64,3 +64,19 @@ body[data-game="profundidades"] .game-hero{background:linear-gradient(110deg,#16
 @media(max-width:800px){.game-grid{gap:45px 24px;padding-inline:8px}.poster-art{width:95px;right:2px}.game-card.poster .game-info h3{max-width:calc(100% - 60px);font-size:23px}.game-card.poster .game-info p{max-width:calc(100% - 50px);font-size:12px}.game-card[data-game="machete"] .poster-art{width:110px}.game-card[data-game="sapo"] .poster-art,.game-card[data-game="neon"] .poster-art{width:105px}.game-card[data-game="campanas"] .poster-art{width:80px}.game-card[data-game="profundidades"] .poster-art{width:65px}.detail-theme-art{position:static;display:block;height:105px;width:120px;margin:20px 0 0 auto}.noticeboard .news-grid{gap:36px}}
 @media(max-width:600px){.game-grid{gap:40px;padding:18px 10px 25px}.game-card.poster{--angle:-1deg}.game-card.poster:nth-child(even){--angle:1deg}.game-card.poster .game-info{padding:20px 10px 22px}.game-card.poster .game-info h3{font-size:26px;max-width:calc(100% - 85px)}.game-card.poster .game-info p{max-width:calc(100% - 65px)}.game-card.poster .image-label{font-size:8px}.poster-art{bottom:64px}.noticeboard .news-grid{padding-inline:8px}.section-heading h2:after{height:6px}}
 @media(prefers-reduced-motion:reduce){.game-card.poster,.scribble-arrow,.mascot-play .mascot,.lettuce-leaf,.sticker,.noticeboard .news-card,.doodle-brow{transition:none}.game-card.poster:hover{transform:rotate(var(--angle))}.mascot-play:hover .mascot{transform:rotate(9deg)}.open-game:hover .scribble-arrow,.hero .button:hover .scribble-arrow{transform:none}}
+
+.game-card[data-game="kiwi"]{--accent:#c3e58d;--paper:#24263a;border-color:#9583b7}.game-card[data-game="kiwi"] .poster-art{width:120px}
+.game-card[data-game="bondi"]{--accent:#e9d18c;--paper:#24382e;border-color:#b7a264}.game-card[data-game="bondi"] .poster-art{width:135px}
+@media(max-width:800px){.game-card[data-game="kiwi"] .poster-art{width:85px}.game-card[data-game="bondi"] .poster-art{width:100px}}
+
+.game-card[data-game="bondi"] .poster-art,body[data-game="bondi"] .detail-theme-art,body[data-game="bondi"] .game-margin-mark{image-rendering:pixelated}
+.game-card[data-game="bondi"] .poster-art{width:150px;transform:rotate(-5deg)}
+.game-card[data-game="kiwi"] .poster-art{width:125px;transform:rotate(4deg)}
+@media(max-width:800px){.game-card[data-game="bondi"] .poster-art{width:110px}.game-card[data-game="kiwi"] .poster-art{width:90px}}
+
+/* Kiwi: worn masking tape with a restrained marker-like label. */
+.release-tape{position:absolute;z-index:5;left:18px;top:27px;padding:13px 23px 12px;background-color:#d3d0ad;background-image:repeating-linear-gradient(2deg,transparent 0 3px,#514d2912 3px 4px),repeating-linear-gradient(91deg,transparent 0 17px,#faf4c319 17px 18px);color:#242a1e;font-family:'Arial Narrow','Trebuchet MS',sans-serif;font-size:clamp(15px,1.35vw,21px);font-weight:900;font-style:italic;letter-spacing:.5px;line-height:1.15;transform:rotate(-5deg);clip-path:polygon(0 4%,99% 0,98% 24%,100% 49%,98% 75%,100% 95%,71% 98%,39% 96%,1% 100%,2% 74%,0 48%,2% 22%);text-shadow:none;pointer-events:none;opacity:.96}
+.release-tape:before{content:'';position:absolute;inset:3px 0;border-top:1px solid #fff8d52b;border-bottom:1px solid #726b3833;pointer-events:none}
+.release-tape:after{content:none}
+@media(max-width:800px){.release-tape{left:12px;top:21px;padding:11px 19px;font-size:16px}}
+@media(max-width:380px){.release-tape{left:9px;top:18px;font-size:14px;padding:10px 16px}}

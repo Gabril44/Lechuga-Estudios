@@ -1,5 +1,54 @@
 const games = [
   {
+    "id": "bondi",
+    "title": "Bondi Simulator",
+    "genre": "Simulación",
+    "status": "En desarrollo",
+    "description": "Acá debería ir un texto que describa Bondi Simulator.",
+    "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Bondi Simulator.",
+    "statusText": "Acá debería ir un texto que indique el estado actual de Bondi Simulator.",
+    "cover": "assets/bondi-personajes-03.webp",
+    "shots": [
+      {
+        "src": "assets/bondi-personajes-01.webp",
+        "label": "Cabina de día · Martín"
+      },
+      {
+        "src": "assets/bondi-personajes-02.webp",
+        "label": "Cabina de noche · Martín"
+      },
+      {
+        "src": "assets/bondi-personajes-03.webp",
+        "label": "Cabina de día · Agustina"
+      },
+      {
+        "src": "assets/bondi-personajes-04.webp",
+        "label": "Cabina de noche · Ichigo"
+      },
+      {
+        "src": "assets/bondi-personajes-05.webp",
+        "label": "Cochera · Línea 86"
+      },
+      {
+        "src": "assets/bondi-personajes-06.webp",
+        "label": "Tuneo del colectivo"
+      },
+      {
+        "src": "assets/bondi-actual-01.webp",
+        "label": "Menú"
+      },
+      {
+        "src": "assets/bondi-actual-03.webp",
+        "label": "Recorrido"
+      }
+    ],
+    "videoUrl": null,
+    "demoUrl": null,
+    "featured": true,
+    "previewUrl": "assets/preview-bondi-montage-hq.webp",
+    "previewPosterUrl": "assets/preview-bondi-poster.webp"
+  },
+  {
     "id": "campanas",
     "title": "Campanas de Ceniza",
     "genre": "Terror gótico · FPS",
@@ -70,7 +119,9 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Campanas de Ceniza.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Campanas de Ceniza.",
     "videoUrl": null,
-    "demoUrl": null
+    "demoUrl": null,
+    "featured": true,
+    "previewUrl": "assets/preview-campanas-montage-hq.webp"
   },
   {
     "id": "sapo",
@@ -147,7 +198,9 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Sapo Caballero.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Sapo Caballero.",
     "videoUrl": null,
-    "demoUrl": null
+    "demoUrl": null,
+    "featured": false,
+    "previewUrl": "assets/preview-sapo-montage-hq.webp"
   },
   {
     "id": "neon",
@@ -196,7 +249,9 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Bajo Neón.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Bajo Neón.",
     "videoUrl": null,
-    "demoUrl": null
+    "demoUrl": null,
+    "featured": false,
+    "previewUrl": "assets/preview-neon-montage-hq.webp"
   },
   {
     "id": "machete",
@@ -289,7 +344,9 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Machete Cósmico.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Machete Cósmico.",
     "videoUrl": null,
-    "demoUrl": null
+    "demoUrl": null,
+    "featured": false,
+    "previewUrl": "assets/preview-machete-montage-hq.webp"
   },
   {
     "id": "profundidades",
@@ -322,6 +379,53 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Las Profundidades.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Las Profundidades.",
     "videoUrl": null,
-    "demoUrl": null
+    "demoUrl": null,
+    "featured": false,
+    "previewUrl": "assets/preview-profundidades-montage-hq.webp"
+  },
+  {
+    "id": "kiwi",
+    "title": "Kiwi",
+    "genre": "RPG",
+    "status": "Terminado",
+    "description": "Acá debería ir un texto que describa Kiwi.",
+    "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Kiwi.",
+    "statusText": "Terminado",
+    "cover": "assets/kiwi-actual-01.webp",
+    "shots": [
+      {
+        "src": "assets/kiwi-actual-01.webp",
+        "label": "Menú"
+      },
+      {
+        "src": "assets/kiwi-actual-02.webp",
+        "label": "Red World"
+      },
+      {
+        "src": "assets/kiwi-actual-03.webp",
+        "label": "Blue World"
+      },
+      {
+        "src": "assets/kiwi-combate-01.webp",
+        "label": "Combate · Red World"
+      },
+      {
+        "src": "assets/kiwi-combate-02.webp",
+        "label": "Combate · Blue World"
+      },
+      {
+        "src": "assets/kiwi-combate-03.webp",
+        "label": "Combate contra el jefe"
+      },
+      {
+        "src": "assets/kiwi-combate-04.webp",
+        "label": "Parry · Kiwi iluminado"
+      }
+    ],
+    "videoUrl": null,
+    "demoUrl": null,
+    "featured": false,
+    "previewUrl": "assets/preview-kiwi-montage-hq.webp",
+    "previewPosterUrl": "assets/preview-kiwi-poster.webp"
   }
 ];
