@@ -423,7 +423,7 @@ const games = [
       }
     ],
     "videoUrl": null,
-    "demoUrl": null,
+    "demoUrl": "https://github.com/Gabril44/KIWI-DEMO/releases/download/v1.0.0-alpha/kiwi-windows.zip",
     "featured": false,
     "previewUrl": "assets/preview-kiwi-montage-hq.webp",
     "previewPosterUrl": "assets/preview-kiwi-poster.webp"
