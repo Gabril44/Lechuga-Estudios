@@ -80,3 +80,12 @@ body[data-game="profundidades"] .game-hero{background:linear-gradient(110deg,#16
 .release-tape:after{content:none}
 @media(max-width:800px){.release-tape{left:12px;top:21px;padding:11px 19px;font-size:16px}}
 @media(max-width:380px){.release-tape{left:9px;top:18px;font-size:14px;padding:10px 16px}}
+
+/* Downloads are separate from the links that open a game detail page. */
+.game-card.poster .game-actions{display:flex;align-items:center;gap:14px 20px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:3}
+.game-card.poster .game-actions .open-game{margin:0}
+.game-card.poster .card-download{display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:100%;padding:10px 15px;border:1px solid var(--accent,#d2f87b);border-radius:2px;background:var(--accent,#d2f87b);color:#10281b;font:inherit;font-size:12px;font-weight:700;text-decoration:none;line-height:1.4;cursor:pointer;transition:background .15s,color .15s}
+.game-card.poster a.card-download:hover{background:#eff7d2;color:#10281b}
+.game-card.poster .card-download:focus-visible{outline:3px solid #eff7d2;outline-offset:4px}
+.game-card.poster .card-download:disabled{background:transparent;border-color:#829d7e66;color:#b1bea7;cursor:default;font-weight:400}
+@media(max-width:600px){.game-card.poster .game-actions{gap:12px;margin-top:18px}.game-card.poster .card-download{font-size:11px}}

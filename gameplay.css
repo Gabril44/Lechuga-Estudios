@@ -1,0 +1,5 @@
+/* Gameplay: a full frame with native, accessible playback controls. */
+#game-video{width:100%;min-width:0}
+#game-video .game-video{width:100%;max-width:1280px;aspect-ratio:16/9;object-fit:contain;background:#050d09;border:1px solid #68826566;border-radius:4px;box-shadow:8px 8px 0 #061b1266;color-scheme:dark}
+#game-video .game-video:focus-visible{outline:3px solid var(--accent,#d2f87b);outline-offset:5px}
+@media(max-width:600px){#game-video .game-video{box-shadow:4px 4px 0 #061b1266}}

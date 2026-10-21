@@ -42,7 +42,7 @@ const games = [
         "label": "Recorrido"
       }
     ],
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/bondi-gameplay.mp4",
     "demoUrl": null,
     "featured": true,
     "previewUrl": "assets/preview-bondi-montage-hq.webp",
@@ -118,7 +118,7 @@ const games = [
     ],
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Campanas de Ceniza.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Campanas de Ceniza.",
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/campanas-gameplay.mp4",
     "demoUrl": null,
     "featured": true,
     "previewUrl": "assets/preview-campanas-montage-hq.webp"
@@ -197,7 +197,7 @@ const games = [
     ],
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Sapo Caballero.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Sapo Caballero.",
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/sapo-gameplay.mp4",
     "demoUrl": null,
     "featured": false,
     "previewUrl": "assets/preview-sapo-montage-hq.webp"
@@ -248,7 +248,7 @@ const games = [
     ],
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Bajo Neón.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Bajo Neón.",
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/neon-gameplay.mp4",
     "demoUrl": null,
     "featured": false,
     "previewUrl": "assets/preview-neon-montage-hq.webp"
@@ -343,7 +343,7 @@ const games = [
     ],
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Machete Cósmico.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Machete Cósmico.",
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/machete-gameplay.mp4",
     "demoUrl": null,
     "featured": false,
     "previewUrl": "assets/preview-machete-montage-hq.webp"
@@ -378,7 +378,7 @@ const games = [
     ],
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Las Profundidades.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Las Profundidades.",
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/profundidades-gameplay.mp4",
     "demoUrl": null,
     "featured": false,
     "previewUrl": "assets/preview-profundidades-montage-hq.webp"
@@ -422,7 +422,7 @@ const games = [
         "label": "Parry · Kiwi iluminado"
       }
     ],
-    "videoUrl": null,
+    "videoUrl": "assets/gameplay/kiwi-gameplay.mp4",
     "demoUrl": "https://github.com/Gabril44/KIWI-DEMO/releases/download/v1.0.0-alpha/kiwi-windows.zip",
     "featured": false,
     "previewUrl": "assets/preview-kiwi-montage-hq.webp",
