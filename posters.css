@@ -90,4 +90,7 @@ body[data-game="profundidades"] .game-hero{background:linear-gradient(110deg,#16
 .game-card.poster .card-download:disabled{background:transparent;border-color:#829d7e66;color:#b1bea7;cursor:default;font-weight:400}
 @media(max-width:600px){.game-card.poster .game-actions{gap:12px;margin-top:18px}.game-card.poster .card-download{font-size:11px}}
 
-.game-card[data-game="machete"] .demo-tape{font-size:clamp(13px,1.4vw,18px);padding:12px 20px;letter-spacing:.5px;white-space:nowrap}
+.game-card .demo-tape{font-size:clamp(13px,1.4vw,18px);padding:12px 20px;letter-spacing:.5px;white-space:nowrap}
+
+.game-card[data-game="profundidades"] .poster-art{width:135px;height:185px;bottom:45px;animation:none;transform:rotate(-6deg)}
+@media(max-width:800px){.game-card[data-game="profundidades"] .poster-art{width:95px;height:140px}}

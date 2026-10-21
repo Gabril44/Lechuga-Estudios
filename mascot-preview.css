@@ -1,0 +1,7 @@
+/* Preview mascot: original artwork is preserved in assets/mascota.png. */
+.brand img{object-fit:contain;border-radius:0;image-rendering:pixelated}
+.hero-art .mascot{width:clamp(280px,24vw,430px);height:auto;max-width:88%;aspect-ratio:1;object-fit:contain;border-radius:0;box-shadow:none;transform:none;image-rendering:pixelated;filter:drop-shadow(14px 16px 0 #061c1855)}
+.mascot-play:hover .mascot{transform:rotate(-3deg) translateY(-4px);filter:drop-shadow(14px 16px 0 #061c1855)}
+.lost-art>img{image-rendering:pixelated}
+@media(max-width:800px){.hero-art .mascot{width:270px;height:auto;aspect-ratio:1;max-width:88%}}
+@media(prefers-reduced-motion:reduce){.mascot-play:hover .mascot{transform:none}}

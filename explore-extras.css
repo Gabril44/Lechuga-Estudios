@@ -1,0 +1,35 @@
+/* Small discoveries stay outside the screenshots and video. */
+.gallery-section{position:relative}
+.secret-perch{position:absolute!important;right:clamp(16px,5vw,80px);top:0;width:100px;height:90px;overflow:hidden;z-index:2!important;pointer-events:none;border-bottom:3px solid var(--game-accent,#d4f77a)}
+.secret-perch img{width:100%;height:125px;object-fit:contain;transform:translateY(-6px) rotate(7deg);transition:transform .2s ease-out;filter:drop-shadow(3px 3px 0 #041a19)}
+.gallery-section:hover .secret-perch img{transform:translateY(-18px) rotate(-4deg)}
+body[data-game=kiwi] .secret-perch img,body[data-game=bondi] .secret-perch img{image-rendering:pixelated}
+.annotated-shot{position:relative;overflow:visible!important}
+.shot-ink{position:absolute;right:14px;bottom:9px;color:var(--game-accent,#d4f77a);font:700 26px/1 monospace;transform:rotate(-12deg);pointer-events:none;opacity:.9;z-index:2;text-shadow:2px 2px #082319}
+.ink-1{border:2px solid currentColor;border-radius:49% 42% 55% 40%;padding:3px 12px;transform:rotate(9deg)}
+.ink-2:before{content:'';position:absolute;width:42px;height:2px;background:currentColor;right:20px;top:15px;transform:rotate(-14deg)}
+.release-facts{margin:30px 0 22px;border-top:1px solid var(--game-line,#779f63);max-width:540px}
+.release-facts>div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px;padding:13px 0;border-bottom:1px solid var(--game-line,#779f63)}
+.release-facts dt{font:700 11px/1.6 'Space Grotesk',sans-serif;text-transform:uppercase;letter-spacing:1px;color:var(--game-accent,#d4f77a)}
+.release-facts dd{margin:0;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+.bug-report{display:inline-block;padding:10px 0;color:var(--game-accent,#d4f77a);border:0;border-bottom:1px dashed currentColor;background:none;font:700 14px/1.4 inherit;text-decoration:none;cursor:pointer}
+.bug-report:hover{color:#fff4d4}.bug-report:focus-visible{outline:2px dashed currentColor;outline-offset:5px}.bug-report:disabled{opacity:.55;cursor:default}
+.bug-pending{font-size:12px!important;max-width:390px;margin-top:12px!important;opacity:.75}
+.lost-page{font-family:Arial,sans-serif;min-height:100svh;display:grid;place-items:center;background:#0b281b;color:#f1efd5;margin:0;padding:30px;box-sizing:border-box;overflow-x:hidden}
+.lost-wrap{width:min(100%,800px);position:relative;text-align:center}
+.lost-brand{font:700 14px/1.5 monospace;letter-spacing:4px;color:#d4f77a;text-decoration:none}
+.lost-art{position:relative;max-width:430px;margin:20px auto 0;height:300px}
+.lost-art>img{height:250px;max-width:70%;object-fit:contain;transform:rotate(-17deg);filter:drop-shadow(12px 10px #061a10)}
+.lost-code{position:absolute;right:0;top:50px;font:900 clamp(70px,18vw,130px)/1 monospace;color:#d4f77a;transform:rotate(9deg);text-shadow:6px 6px #061a10}
+.lost-cable{position:absolute;bottom:0;left:0;width:100%;height:120px;pointer-events:none}
+.lost-wrap h1{font-size:clamp(30px,6vw,52px);margin:12px 0}.lost-wrap>p{max-width:500px;margin:20px auto 30px;line-height:1.6}
+.lost-links{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}.lost-links a{padding:15px 22px;border:2px solid #d4f77a;color:#d4f77a;text-decoration:none;font-weight:700}.lost-links a:first-child{background:#d4f77a;color:#143322;box-shadow:5px 5px #eeeed4}.lost-links a:focus-visible{outline:3px dashed white;outline-offset:6px}
+@media(max-width:600px){.secret-perch{width:70px;height:60px;right:85px}.secret-perch img{height:95px;transform:translateY(-8px) rotate(7deg)}.shot-ink{font-size:20px}.release-facts>div{grid-template-columns:82px minmax(0,1fr);gap:12px}.lost-art{height:255px}.lost-art>img{height:210px}}
+@media(prefers-reduced-motion:reduce){.secret-perch img{transition:none}.gallery-section:hover .secret-perch img{transform:translateY(-6px) rotate(7deg)}}
+
+body[data-game=profundidades] #gameplay>.cave-secret{position:absolute!important;right:clamp(20px,5vw,80px);bottom:10px;width:125px;height:70px;object-fit:contain;z-index:2;pointer-events:none;transform:rotate(-9deg);opacity:.9;filter:drop-shadow(3px 4px 0 #071b21)}
+@media(max-width:600px){body[data-game=profundidades] #gameplay>.cave-secret{width:90px;height:60px;right:20px;bottom:10px}}
+
+body[data-game=campanas] .secret-perch img{image-rendering:pixelated;object-position:top;transform:translateY(3px) rotate(5deg)}
+body[data-game=campanas] .gallery-section:hover .secret-perch img{transform:translateY(-5px) rotate(-3deg)}
+@media(prefers-reduced-motion:reduce){body[data-game=campanas] .gallery-section:hover .secret-perch img{transform:translateY(3px) rotate(5deg)}}

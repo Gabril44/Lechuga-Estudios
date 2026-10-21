@@ -1,6 +1,7 @@
 const games = [
   {
     "id": "bondi",
+    "durationText": "15 min aprox.",
     "title": "Bondi Simulator",
     "genre": "Simulación",
     "status": "En desarrollo",
@@ -50,6 +51,7 @@ const games = [
   },
   {
     "id": "campanas",
+    "durationText": "15 min aprox.",
     "title": "Campanas de Ceniza",
     "genre": "Terror gótico · FPS",
     "description": "Acá debería ir un texto que describa Campanas de Ceniza.",
@@ -119,12 +121,13 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Campanas de Ceniza.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Campanas de Ceniza.",
     "videoUrl": "assets/gameplay/campanas-gameplay-v2.mp4",
-    "demoUrl": null,
+    "demoUrl": "https://github.com/Gabril44/Campanas-de-Ceniza/releases/download/Alpha0.1/Campanas-de-Ceniza-Demo-Windows-x64.zip",
     "featured": true,
     "previewUrl": "assets/preview-campanas-completo.webp"
   },
   {
     "id": "sapo",
+    "durationText": "15 min aprox.",
     "title": "Sapo Caballero",
     "genre": "Aventura · Plataformas",
     "description": "Acá debería ir un texto que describa Sapo Caballero.",
@@ -204,6 +207,7 @@ const games = [
   },
   {
     "id": "neon",
+    "durationText": "15 min aprox.",
     "title": "Bajo Neón",
     "genre": "Cyberpunk",
     "description": "Acá debería ir un texto que describa Bajo Neón.",
@@ -255,6 +259,7 @@ const games = [
   },
   {
     "id": "machete",
+    "durationText": "15 min aprox.",
     "title": "Machete Cósmico",
     "genre": "Hack and slash",
     "description": "Acá debería ir un texto que describa Machete Cósmico.",
@@ -350,6 +355,7 @@ const games = [
   },
   {
     "id": "profundidades",
+    "durationText": "15 min aprox.",
     "title": "Las Profundidades",
     "genre": "Exploración · Plataformas",
     "description": "Acá debería ir un texto que describa Las Profundidades.",
@@ -379,7 +385,7 @@ const games = [
     "details": "Acá debería ir un texto que cuente la historia, la propuesta y las mecánicas de Las Profundidades.",
     "statusText": "Acá debería ir un texto que indique el estado actual de Las Profundidades.",
     "videoUrl": "assets/gameplay/profundidades-gameplay.mp4",
-    "demoUrl": null,
+    "demoUrl": "https://github.com/Gabril44/Las-Profundidades/releases/download/Alpha0.1/Las-Profundidades-Demo-Windows-x64.zip",
     "featured": false,
     "previewUrl": "assets/preview-profundidades-montage-hq.webp"
   },

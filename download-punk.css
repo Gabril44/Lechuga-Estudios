@@ -33,3 +33,30 @@ body[data-game=kiwi] .download-character{width:150px;height:150px;image-renderin
 .game-card.poster .card-download:disabled .download-offset-icon{display:none}
 .game-card.poster .card-download:focus-visible{outline:3px solid #d4f77a;outline-offset:7px}
 @media(max-width:480px){.game-card.poster .card-download{font-size:14px;min-width:0}}
+
+/* Each release poster follows its game's palette and materials. */
+.download-poster{--download-ink:#10291a;--download-accent:var(--game-accent,#d0f779);border-color:var(--game-line,#a4bd7a)!important}
+.download-ready .download-poster-tag,.download-poster .download-main-button{background:var(--download-accent);color:var(--download-ink)}
+.download-poster .download-main-button{box-shadow:5px 6px 0 #07190e,0 0 0 1px var(--download-accent)}
+.download-poster:after{background:linear-gradient(180deg,transparent,var(--game-panel,#071b12) 85%)}
+body[data-game=campanas] .download-poster{--download-accent:#e9b7a5;--download-ink:#39141c;border-top:7px solid #832d40!important;box-shadow:9px 11px 0 #230d19;transform:rotate(-1deg)}
+body[data-game=campanas] .download-character{filter:drop-shadow(4px 7px 0 #6b132b);transform:rotate(-13deg)}
+body[data-game=campanas] .download-poster-tag{background:#6c2033;color:#ffddd1;border-bottom:3px solid #ba6573}
+body[data-game=sapo] .download-poster{--download-accent:#dfd3a1;--download-ink:#233b2c;border:3px double #a8ba83!important;box-shadow:9px 11px 0 #101f17;transform:rotate(1deg)}
+body[data-game=sapo] .download-poster:before{background:#bfcea7d9}
+body[data-game=sapo] .download-poster-tag{border:1px dashed #445936;border-radius:2px}
+body[data-game=profundidades] .download-poster{--download-accent:#b1d8d1;--download-ink:#152e35;border:2px dashed #77999c!important;box-shadow:9px 11px 0 #091c27;transform:rotate(-.8deg)}
+body[data-game=profundidades] .download-character{top:35px;right:6px;width:155px;height:200px;transform:rotate(-7deg);animation:none;filter:drop-shadow(5px 7px 0 #061820)}
+body[data-game=profundidades] .download-poster:before{background:repeating-linear-gradient(25deg,#8c7953 0 3px,#c0ae7d 3px 6px);height:9px;top:5px;left:10%;width:80%;transform:rotate(-7deg)}
+body[data-game=neon] .download-poster{--download-accent:#6cebd8;--download-ink:#10252c;border-color:#65d8de!important;box-shadow:7px 9px 0 #5b285f;transform:skewY(-1deg)}
+body[data-game=neon] .download-poster:before{background:#d77ac4;height:5px;top:10px;left:0;width:65%;clip-path:none;transform:none}
+body[data-game=neon] .download-poster-tag{border-left:5px solid #cd69c0;letter-spacing:2px}
+body[data-game=machete] .download-poster{--download-accent:#b5ef77;--download-ink:#172e20;border-color:#8aba53!important;box-shadow:9px 11px 0 #283319}
+body[data-game=machete] .download-character{width:175px;height:175px;right:-5px;transform:rotate(-17deg);filter:drop-shadow(5px 7px 0 #6f972b66)}
+body[data-game=kiwi] .download-poster{--download-accent:#a9f3ca;--download-ink:#171c30;border-color:#8b83c0!important;box-shadow:8px 10px 0 #574576;transform:rotate(-1deg)}
+body[data-game=kiwi] .download-poster-tag{font-family:monospace;border-left:4px solid #a776e1;box-shadow:3px 3px #6fe2dc}
+body[data-game=kiwi] .download-poster:before{background:repeating-linear-gradient(90deg,#b8e7db 0 13px,#9978b6 13px 17px);clip-path:none;height:12px}
+body[data-game=bondi] .download-poster{--download-accent:#f0d582;--download-ink:#21352d;border:3px solid #d4c591!important;box-shadow:9px 11px 0 #213a30;transform:rotate(.6deg)}
+body[data-game=bondi] .download-poster-tag{border:2px solid #263c32;font-family:monospace}
+body[data-game=bondi] .download-character{width:170px;height:150px;image-rendering:pixelated;transform:rotate(-6deg)}
+@media(max-width:480px){body[data-game] .download-character{width:115px;height:145px;right:0;top:60px}body[data-game=profundidades] .download-character{height:170px;top:40px}}
